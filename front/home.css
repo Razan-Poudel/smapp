@@ -1,0 +1,301 @@
+body {
+  background-color: rgba(0, 0, 0, 0.438);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* designing the scroollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* other elements */
+#personal {
+  height: 6vh;
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.users {
+  max-height: 100vh;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
+}
+#chatbox {
+  max-height: 87vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: linear-gradient(
+    rgb(201, 166, 247),
+    rgb(236, 100, 236),
+    rgb(100, 11, 184)
+  );
+  position: scroll;
+  border: none;
+}
+.body {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.inputfeild {
+  height: 7vh;
+  background: linear-gradient(
+    rgb(100, 11, 184),
+    rgb(100, 11, 184) /* rgb(201, 166, 247) rgb(236, 100, 236), */
+  );
+  position: fixed;
+  top: 93vh;
+  right: 0px;
+  width: 74.5%;
+}
+#userimage {
+  margin-top: 1%;
+  margin-left: 3%;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+}
+#personal > strong {
+  font-size: larger;
+  font-family: sans-serif;
+  padding-top: 10px;
+  margin-left: 10px;
+  cursor: default;
+  color: rgb(168, 16, 214);
+}
+#dropdown {
+  width: 30px;
+  height: 30px;
+  margin-left: 30%;
+  margin-top: 1%;
+  font-size: x-large;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#dropdown:hover {
+  background-color: rgba(157, 6, 245, 0.664);
+  border: 1px solid rgb(186, 188, 192);
+  transition: background-color 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  color: white;
+}
+* {
+  border: 2px solid transparent;
+  font-family: sans-serif;
+}
+#optionbox {
+  background-color: #f1f1f1;
+  height: fit-content;
+  width: 30%;
+  align-items: center;
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  border-radius: 10%;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  box-shadow: rgb(158, 0, 231) 3px 3px 7px;
+}
+#optionbox > li {
+  display: block;
+  list-style: none;
+  padding: 1%;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 2.1%;
+  font-size: large;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+hr {
+  border: 1px solid rgba(82, 82, 82, 0.123);
+}
+
+.user {
+  /* border: 2px solid red; */
+  width: 95%;
+  display: grid;
+  margin: auto;
+  border-radius: 7px;
+  margin-top: 5px;
+  padding: 5px;
+  height: 9vh;
+  grid-template-columns: 1fr 4fr;
+  cursor: pointer;
+  transition: background 0.1s ease-out;
+  /* grid-template-rows: 1fr 4fr; */
+}
+.user:hover {
+  transition: background 0.1s ease-out;
+  background-color: rgba(212, 212, 212, 0.664);
+}
+.user > img {
+  height: 78%;
+  width: 78%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.name {
+  display: inline;
+  font-size: 17px;
+  font-family: sans-serif;
+  padding-top: 3px;
+  margin-left: 6px;
+  margin-top: 0px;
+  /* cursor: d; */
+  font-weight: 600;
+  /* color: rgb(168, 16, 214); */
+}
+.latestmessage {
+  font-size: 16px;
+  display: inline-block;
+  color: rgba(99, 92, 92, 0.836);
+  color: rgb(158, 0, 231);
+  width: 220px;
+  height: 20px;
+  overflow: hidden;
+}
+.text {
+  display: grid;
+}
+.bubble {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(178, 68, 230);
+  display: inline-block;
+  margin-bottom: -2px;
+  margin-left: 35px;
+  border-radius: 50%;
+}
+.time {
+  color: grey;
+  font-size: 14px;
+  display: inline-block;
+}
+.message {
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-flex;
+}
+#search {
+  border: 1px solid brown;
+  border-radius: 40px;
+  height: 20px;
+  width: 70%;
+  display: block;
+  margin: auto;
+  background-color: rgb(241, 241, 241);
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  font-size: 17px;
+  outline: rgb(0, 238, 255) 1px solid;
+  outline: none;
+}
+#personimage {
+  height: 100%;
+  /* border: 1px solid pink; */
+  width: 50px;
+  margin-left: 10px;
+  display: inline-block;
+}
+#personrealimg {
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
+.personname {
+  /* border: 2px solid blue; */
+  display: inline-block;
+  position: absolute;
+  margin-top: 1.5vh;
+  font-style: oblique;
+  font-weight: 600;
+}
+.personname > a {
+  color: rgb(0, 24, 8);
+  text-decoration: none;
+}
+.personname > a:hover {
+  text-decoration: underline;
+}
+#chatperson {
+  background-color: white;
+}
+.chatmessage {
+  display: block;
+  /* border: 2px solid red; */
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  /* text-align: right; */
+}
+.messagetext {
+  display: block;
+  margin-left: 0px;
+  /* border: 2px solid red; */
+  height: fit-content;
+  width: fit-content;
+  max-width: 200px;
+  padding: 4px;
+  padding-right: 9px;
+  border-radius: 7px;
+  font-size: medium;
+}
+.sentmessage {
+  flex-direction: row-reverse;
+}
+.sentmessage > .messagetext {
+  background-color: rgb(6, 199, 212);
+  color: white;
+  margin-right: 12px;
+}
+.receivedmessage > .messagetext {
+  flex-direction: row;
+  background-color: rgb(240, 240, 240);
+  margin-left: 3px;
+}
+.outer {
+  /* border: 1px solid red; */
+  height: 4vh;
+  margin: 6px;
+}
+#messageinput {
+  display: inline-block;
+  /* margin: auto; */
+  height: 3.4vh;
+  border-radius: 10px;
+  width: 45vh;
+  outline: transparent;
+  padding-left: 10px;
+  background-color: rgb(224, 224, 224);
+  color: rgb(0, 0, 0);
+}
+#send {
+  display: inline-block;
+  width: 8vh;
+  height: 3vh;
+  margin-left: 9px;
+}
