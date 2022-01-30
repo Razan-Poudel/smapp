@@ -4,8 +4,8 @@
 <li>Support for timed messages</li>
 <li>Make user able to communicate with others by adding them in friend list</li>
 <li>Give user full access to customize their user experience</li>
-<li>Give users a new experience fo social media</li>
+<li>Give users a new experience fo social media</li>gh
 
-<i style="color: red;">Thi project ompleted yet.</i><br>
+<i style="color: red;">This project is not completed yet.</i><br>
 <i>This notice will be updated along with the progress of the project</i><br>
 <i>For any queries email: <a href="poudelrajan63@gmail.com">poudelrajan63@gmail.com</a><br>
