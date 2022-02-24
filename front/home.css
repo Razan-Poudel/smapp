@@ -22,7 +22,7 @@ body {
 /* other elements */
 #personal {
   height: 6vh;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   display: flex;
 }
 
@@ -30,18 +30,23 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   background-color: rgb(255, 255, 255);
+  /* padding-bottom: -100px; */
+  height: 100vh;
 }
 #chatbox {
   max-height: 87vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgb(201, 166, 247),
     rgb(236, 100, 236),
     rgb(100, 11, 184)
-  );
+  ); */
+  background-color: #f3f0f0;
   position: scroll;
   border: none;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .body {
   position: absolute;
@@ -54,8 +59,8 @@ body {
 .inputfeild {
   height: 7vh;
   background: linear-gradient(
-    rgb(100, 11, 184),
-    rgb(100, 11, 184) /* rgb(201, 166, 247) rgb(236, 100, 236), */
+    rgb(238, 234, 241),
+    rgb(233, 232, 235) /* rgb(201, 166, 247) rgb(236, 100, 236), */
   );
   position: fixed;
   top: 93vh;
@@ -78,22 +83,32 @@ body {
   color: rgb(168, 16, 214);
 }
 #dropdown {
-  width: 30px;
-  height: 30px;
+  width: fit-content;
+  height: 32px;
   margin-left: 30%;
-  margin-top: 1%;
-  font-size: x-large;
+  margin-top: 3%;
+  font-size: 32px;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+  /*
+  padding-bottom: 30%; */
+  /* padding: 10px; */
 }
-#dropdown:hover {
-  background-color: rgba(157, 6, 245, 0.664);
-  border: 1px solid rgb(186, 188, 192);
+#dropdown > img {
+  height: 15px;
+  width: 30px;
+  /* transform: ; */
+  /* filter: invert(); */
+}
+/* #dropdown:hover { */
+/* background-color: rgba(235, 233, 236, 0.562); */
+/* border: 1px solid rgb(173, 175, 180);
   transition: background-color 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
-  color: white;
-}
+  color: white; */
+/* transform: rotate(180deg); */
+/* } */
 * {
   border: 2px solid transparent;
   font-family: sans-serif;
@@ -101,16 +116,17 @@ body {
 #optionbox {
   background-color: #f1f1f1;
   height: fit-content;
-  width: 30%;
+  width: 20vw;
   align-items: center;
   position: absolute;
-  top: 7%;
+  top: -100%;
   left: 10%;
   border-radius: 10%;
   z-index: 1;
-  display: none;
+  display: flex;
   flex-direction: column;
   box-shadow: rgb(158, 0, 231) 3px 3px 7px;
+  opacity: 0;
 }
 #optionbox > li {
   display: block;
@@ -123,6 +139,7 @@ body {
   font-size: large;
   font-weight: bold;
   font-family: sans-serif;
+  cursor: pointer;
 }
 hr {
   border: 1px solid rgba(82, 82, 82, 0.123);
@@ -147,10 +164,11 @@ hr {
   background-color: rgba(212, 212, 212, 0.664);
 }
 .user > img {
-  height: 78%;
-  width: 78%;
+  height: 8vh;
+  width: 8vh;
   border-radius: 50%;
   display: inline-block;
+  clip-path: circle();
 }
 .name {
   display: inline;
@@ -243,7 +261,7 @@ hr {
   background-color: white;
 }
 .chatmessage {
-  display: block;
+  /* display: block; */
   /* border: 2px solid red; */
   height: fit-content;
   width: 100%;
@@ -268,34 +286,111 @@ hr {
   flex-direction: row-reverse;
 }
 .sentmessage > .messagetext {
-  background-color: rgb(6, 199, 212);
+  background-color: rgba(132, 30, 216, 0.644);
   color: white;
   margin-right: 12px;
 }
 .receivedmessage > .messagetext {
   flex-direction: row;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 232, 232);
   margin-left: 3px;
 }
+/* input: rgb(212, 151, 231); */
 .outer {
   /* border: 1px solid red; */
-  height: 4vh;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 4.5vh;
   margin: 6px;
+  /* background-color: rgba(212, 151, 231, 0.664); */
+  background-color: rgba(212, 152, 230, 0.664);
+  border-radius: 3px;
+  /* border: 4px solid rgba(177, 121, 230, 0.493); */
+}
+.outer > span {
+  margin-left: 9px;
+  margin-right: 8px;
+  cursor: pointer;
 }
 #messageinput {
   display: inline-block;
-  /* margin: auto; */
+  margin: auto;
+  margin-right: 10vw;
   height: 3.4vh;
-  border-radius: 10px;
-  width: 45vh;
+  border-radius: 20px;
+  width: 90vh;
   outline: transparent;
   padding-left: 10px;
-  background-color: rgb(224, 224, 224);
-  color: rgb(0, 0, 0);
+  /* background-color: rgba(217, 135, 241, 0.493); */
+  background-color: rgba(224, 177, 238, 0.664);
+  color: rgba(0, 0, 0, 0.986);
+  border: rgba(252, 247, 247, 0) 2px solid;
+  font-size: 17px;
 }
 #send {
   display: inline-block;
   width: 8vh;
   height: 3vh;
-  margin-left: 9px;
+  margin-right: 20vw;
+  /* background-image: url("../../sendimagepurple.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent; */
+  background: none;
+  cursor: default;
+}
+#send > img {
+  cursor: pointer;
+  height: 5%;
+  width: 5%;
+  background: transparent;
+  /* align-self: center; */
+  margin: -3px;
+  animation-name: myanimation2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  top: 93%;
+  left: 93%;
+}
+@keyframes myanimation {
+  0% {
+    top: 90%;
+    left: 90%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    /* transform: rotate(20deg); */
+  }
+
+  100% {
+    top: -4%;
+    left: -4%;
+  }
+}
+.lastmessageinchat {
+  margin-bottom: 20px;
+}
+#timedmessageoption > img {
+  height: 90%;
+}
+.outer > span {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin-top: 2px;
+  padding: 2px;
+}
+.outer > span:hover {
+  border: 1px solid rgba(183, 26, 223, 0.596);
+}
+#about {
+  position: absolute;
+  width: fit-content;
+  background-color: #888;
+  border-radius: 7px;
+  padding: 2px;
+  color: white;
+  display: none;
 }
