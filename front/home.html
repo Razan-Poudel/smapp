@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShareMe</title>
-    <link rel="shortcut icon" href="../../unnamed.jpg" type="image/x-icon" />
+    <title>Mate</title>
+    <link rel="shortcut icon" href="./sampleimages/elonmusk.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
     <div class="body">
       <!-- <div id="nav"> -->
       <div id="personal">
-        <a href="#">
-          <img src="../../unnamed.jpg" alt="User" id="userimage" />
-        </a>
-        <strong id="chats">Chats</strong>
+        <a href="#" style="border: 1px solid rgba(255, 0, 0, 0);"><img src="./sampleimages/elonmusk.jpg" alt="User" id="userimage" /></a>
+        <strong id="chats" title="Mate">Mate</strong>
         <!-- <div id="dropdown">&#8964;</div> -->
-        <div id="dropdown"><img src="./icons/dropdown.jpeg" alt="V"></div>
+        <div id="dropdown" class="dropdown"><img src="./icons/dropdown.png" alt="V"></div>
       </div>
       <div id="chatperson">
         <div id="personimage">
-          <img src="../../unnamed.jpg" alt="Rajan" id="personrealimg" />
+          <img src="./sampleimages/unnamed.jpg" alt="Rajan" id="personrealimg" />
         </div>
         <div class="personname"><a href="#">Rajan Poudel</a></div>
+        <div id="dropdown2" class="dropdown"><img src="./icons/dropdown.png" alt="V"></div>
       </div>
       <div class="users">
         <div id="searchusers">
@@ -40,7 +40,7 @@
         </div>
         <div id="usersbox">
         <div class="user">
-          <img src="../../unnamed.jpg" alt="user" />
+          <img src="./sampleimages/elonmusk.jpg" alt="user" />
           <div class="text">
             <div class="name">Rajan Poudel</div>
             <div class="latestmessage">
@@ -84,13 +84,13 @@
         <div class="inputfeild">
       <div class="outer">
         <form action="#">
-          <input name="message" id="messageinput"  placeholder="Send a mesage" autofocus="on" autocomplete="off" required>
-          <button type="submit"  id="send"><img src="./icons/sendimagepurple.png" alt="Send" id="sendimage"></button>
+          <input name="message" type="text"  id="messageinput"  placeholder="Send a mesage" autofocus="on" autocomplete="off" required>
+          <button type="submit"  id="send" title="Press Enter to send"><img src="./icons/sendimagepurple.png" alt="Send" id="sendimage"></button>
         </form>
-        <span id="filesoption">O</span>
-        <span id="imagesoption">@</span>
-        <span id="loactionoption">#</span>
-        <span id="timedmessageoption"><img src="./icons/alarm-clock-icon-7.png" alt="Timed message"></span>
+        <span id="filesoption" class="inverts messageoptions" title="Send a file"><img src="./icons/fileicon.png" alt="file"></span>
+        <span id="imagesoption"  class="messageoptions" title="Send an image"><img src="./icons/image-image.png" alt="image"></span>
+        <span id="loactionoption" class="messageoptions" title="Send your location"><img src="./icons/locationicon.png" alt="location"></span>
+        <span id="timedmessageoption" class="messageoptions" title="Send a timed message"><img src="./icons/alarm-clock-icon.png" alt="Timed message"></span>
       </div>
         </div>
       </div>
@@ -109,7 +109,91 @@
       <hr width="90%" color="grey" />
       <li>Log Out</li>
     </div>
-    <div id="about">This is floating</div>
+    <div id="shared">
+      <div id="links"  class="sharedm">
+        <div class="description">Shared links <img src="./icons/dropdown.png" alt=""></div>
+      <ul class="list">
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+      </ul>
+      </div>
+      <div id="medias" class="sharedm">
+        <div class="description">Shared medias<img src="./icons/dropdown.png" alt=""></div>
+      <ul class="list">
+      <img src="../front/sampleimages/elonmusk.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/space.jpeg" alt="Space"   onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/circle.png" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/download (1).png" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/background.jpeg" alt="elonmusk" onclick="displayimage(this.src)">
+      </ul>
+      </div>
+      <div id="medias2" class="sharedm">
+        <div class="description">Nicknames<img src="./icons/dropdown.png" alt=""></div>
+      <ul class="list">
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+      </ul>
+      </div>
+      <div id="medias3" class="sharedm">
+        <div class="description">Shared Files <img src="./icons/dropdown.png" alt=""></div>
+      <ul class="list">
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+        <li><a href="https://www.amazon.in">Amazon</a></li>
+      </ul>
+      </div>
+    </div>
+    <!-- <div id="about">This is floating</div> -->
+    <div id="imagecontainer">
+      <div id="exit" title="Close">
+        <img src="../front/icons/cancel-64.png" alt="">
+      </div>
+      <img src="../front/sampleimages/space.jpeg" alt="Elon-Musk" id="image">
+    </div>
   </body>
   <script src="dom_manipulations.js"></script>
 <script src="home.js"></script>
