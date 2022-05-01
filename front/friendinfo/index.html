@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajan Poudel</title>
+    <link
+      rel="shortcut icon"
+      href="/icons/locationicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- our outermost wrapper -->
+    <div id="outermostwrapper">
+      <!-- our navbar -->
+      <div id="navbar" class="items">
+        <div id="searchwrapper">
+          <input
+            type="search"
+            placeholder="Search a friend"
+            id="searchbar"
+            spellcheck="false"
+          />
+          <div id="searchbtn"></div>
+          
+        </div>
+      </div>
+      <!-- info of our site and logo -->
+      <div id="siteinfo" class="items">
+        <!-- This is where user sees his profile pic new mate logo or text -->
+        <div id="personal">
+          <a href="#" style="border: 1px solid rgba(255, 0, 0, 0)">
+            <!-- <img src="/icons/history-filled.svg" alt="User" id="userimage" /> -->
+          </a>
+          <strong id="chats" title="Mate">Mate</strong>
+        </div>
+      </div>
+
+      <!-- This is where all the settings are located to out side pannel -->
+      <div id="side" class="items">
+        <ul class="actionslistwrapper">
+          <!-- This is the info action btn  -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/info-outline.svg" alt=""
+              /></span>
+              <span class="text">Info</span>
+            </div>
+          </li>
+          <!-- This is the shared action btn -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/link-outline.svg" alt=""
+              /></span>
+              <!-- This is the sub-actionlist -->
+              <span class="text">shared</span>
+            </div>
+            <div class="subactionwrapper">
+              <span class="sub-actionslist">Images</span>
+            </div>
+          </li>
+          <!-- This is where activites btn located -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/body-outline.svg" alt=""
+              /></span>
+              <span class="text">Activites</span>
+            </div>
+          </li>
+          <!-- This is where nicknames btn is located -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/person-outline.svg" alt=""
+              /></span>
+              <span class="text">Nicknames</span>
+            </div>
+          </li>
+          <!-- This is privacy btn -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/privacy-outline.svg" alt=""
+              /></span>
+              <span class="text">Privacy</span>
+            </div>
+          </li>
+          <!-- This is history btn -->
+          <li class="actionslist" tabindex="0">
+            <div class="iconandtextwrapper">
+              <span class="icon">
+                <img src="/icons/history-outline.svg" alt=""
+              /></span>
+              <span class="text">History</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- This is where out main content i.e information is located  -->
+
+      <div id="section" class="items">
+        <!-- This is where we see the relation of a person with you like freindship status and shared medas -->
+        <div id="profilescard">
+          <div id="profiles">
+            <div id="myimage" class="profileimages1">
+              <img
+                src="http://127.0.0.1:5500/sampleimages/unnamed.jpg"
+                alt="404"
+              />
+              <span class="username"> Razan Paudel </span>
+            </div>
+            <div id="arrow">
+              <div id="actualarrow">
+                <img
+                  src="/icons/handshake.pn g"
+                  alt=""
+                  onerror="this.style.display='none'"
+                />
+              </div>
+            </div>
+            <div id="mateimage" class="profileimages1">
+              <img src="../sampleimages/random4.webp" alt="404" />
+              <span class="username">Elon Musk</span>
+            </div>
+          </div>
+          <div id="sh-des">
+            You are mates with <span id="mutalmates"> 124 mutal mates</span>
+            <br />
+            Since <strong id="matesdate">April 12 2006</strong>
+          </div>
+        </div>
+        <!-- this is the div containeing total share counts of messages files and other stuffs -->
+        <div id="details">
+          <!-- messages -->
+          <div
+            id="messagescount"
+            class="count"
+            onmouseover="fillimage(this,'/icons/chatbubble-filled.svg')"
+            onmouseout="removefilling(this,'/icons/chatbubble-outline.svg')"
+            title="View Messages"
+          >
+            <span class="counttype">
+              <img
+                src="/icons/chatbubble-outline.svg"
+                alt=""
+                onerror="this.style.display='none'"
+              />
+              <span class="heading"> Messages </span>
+            </span>
+            <span class="value">10053+</span>
+          </div>
+          <!-- images -->
+          <div
+            id="imagescount"
+            class="count"
+            onmouseover="fillimage(this,'/icons/images-filled.svg')"
+            onmouseout="removefilling(this,'/icons/images-outline.svg')"
+            title="View Images"
+          >
+            <span class="counttype">
+              <img
+                src="/icons/images-outline.svg"
+                alt=""
+                onerror="this.style.display='none'"
+              />
+              <span class="heading"> Images </span>
+            </span>
+            <span class="value">1245+</span>
+          </div>
+          <!-- videos -->
+          <div
+            id="videoscount"
+            class="count"
+            onmouseover="fillimage(this,'/icons/videocam-filled.svg')"
+            onmouseout="removefilling(this,'/icons/videocam-outline.svg')"
+            title="View Videos"
+          >
+            <span class="counttype">
+              <img
+                src="/icons/videocam-outline.svg"
+                alt=""
+                onerror="this.style.display='none'"
+              />
+              <span class="heading"> Videos </span>
+            </span>
+            <span class="value">103+</span>
+          </div>
+          <!-- files -->
+          <div
+            id="filescount"
+            class="count"
+            onmouseover="fillimage(this,'/icons/file-filled.svg')"
+            onmouseout="removefilling(this,'/icons/file-outline.svg')"
+            title="Browse Files"
+          >
+            <span class="counttype">
+              <img
+                src="/icons/file-outline.svg"
+                alt=""
+                onerror="this.style.display='none'"
+              />
+              <span class="heading"> Files </span>
+            </span>
+            <span class="value">109+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

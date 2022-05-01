@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mate</title>
+    <title id="t">Mate</title>
     <link rel="shortcut icon" href="./sampleimages/elonmusk.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="home.css" />
@@ -25,7 +25,7 @@
         <div class="personname"><a href="#">Rajan Poudel</a></div>
         <div id="dropdown2" class="dropdown"><img src="./icons/dropdown.png" alt="V"></div>
       </div>
-      <div class="users">
+      <div class="users" onscroll="null">
         <div id="searchusers">
 
           <div id="searchbox">
@@ -38,7 +38,7 @@
           </div>
           <hr width="80%" color="grey" id="searchseperator" />
         </div>
-        <div id="usersbox">
+        <div id="usersbox" >
         <div class="user">
           <img src="./sampleimages/elonmusk.jpg" alt="user" />
           <div class="text">
@@ -84,7 +84,7 @@
         <div class="inputfeild">
       <div class="outer">
         <form action="#">
-          <input name="message" type="text"  id="messageinput"  placeholder="Send a mesage" autofocus="on" autocomplete="off" required>
+          <input name="message" type="text"  id="messageinput"  placeholder="Send a mesage" autofocus="on" autocomplete="off" required title="">
           <button type="submit"  id="send" title="Press Enter to send"><img src="./icons/sendimagepurple.png" alt="Send" id="sendimage"></button>
         </form>
         <span id="filesoption" class="inverts messageoptions" title="Send a file"><img src="./icons/fileicon.png" alt="file"></span>
@@ -97,19 +97,39 @@
 
       <!-- </div> -->
     </div>
+    <div id="optionbox" tabindex="0">
+      <li id="profile" style="border-top:none;">
+        <img src="/front/icons/locationicon.png" alt="" />
+        <div class="line"></div>
+        <span> Your Profile</span>
+      </li>
+      <li>
+        <img src="/front/icons/alarm-clock-icon.png" alt="" />
 
-    <div id="optionbox">
-      <li>Your Profile</li>
-      <hr width="90%" color="grey"/>
-      <li>Timed messages</li>
-      <hr width="90%" color="grey" />
-      <li>Customize Chats</li>
-      <hr width="90%" color="grey" />
-      <li>Archived Chats</li>
-      <hr width="90%" color="grey" />
-      <li>Log Out</li>
+        <div class="line"></div>
+        <span> Timed messages</span>
+      </li>
+      <li>
+        <img src="/front/icons/image-image.png" alt="" />
+        <div class="line"></div>
+        <span> Customize</span>
+      </li>
+      <li>
+        <img src="/front/icons/cancel-64.png" alt="" />
+        <div class="line"></div>
+        <span> Archived Chats</span>
+      </li>
+      <li>
+        <img src="/front/icons/fileicon.png" alt="" >
+        <div class="line"></div>
+        <span> Log Out</span>
+      </li>
     </div>
-    <div id="shared">
+
+
+    
+    <div id="shared" tabindex="0">
+      <!-- Contains all the links that have been exchanged -->
       <div id="links"  class="sharedm">
         <div class="description">Shared links <img src="./icons/dropdown.png" alt=""></div>
       <ul class="list">
@@ -133,17 +153,73 @@
         <li><a href="https://www.amazon.in">Amazon</a></li>
       </ul>
       </div>
-      <div id="medias" class="sharedm">
+
+      <!-- Contains all the medias like pictures and videos that have been sent  -->
+      <div id="medias" class="sharedm" tabindex="0"
+      onscroll="sharedmediascrolled(this)">
         <div class="description">Shared medias<img src="./icons/dropdown.png" alt=""></div>
-      <ul class="list">
+      <ul class="list" >
       <img src="../front/sampleimages/elonmusk.jpg" alt="elonmusk" onclick="displayimage(this.src)">
       <img src="../front/sampleimages/space.jpeg" alt="Space"   onclick="displayimage(this.src)">
       <img src="../front/sampleimages/circle.png" alt="elonmusk" onclick="displayimage(this.src)">
       <img src="../front/sampleimages/download (1).png" alt="elonmusk" onclick="displayimage(this.src)">
       <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
+      <img src="../front/sampleimages/22987812.jpg" alt="elonmusk" onclick="displayimage(this.src)">
       <img src="../front/sampleimages/background.jpeg" alt="elonmusk" onclick="displayimage(this.src)">
       </ul>
       </div>
+      <!-- Contains Nicknames of the users -->
       <div id="medias2" class="sharedm">
         <div class="description">Nicknames<img src="./icons/dropdown.png" alt=""></div>
       <ul class="list">
@@ -164,6 +240,7 @@
         <li><a href="https://www.amazon.in">Amazon</a></li>
       </ul>
       </div>
+      <!-- Contains all the files that have been exchanged by the users -->
       <div id="medias3" class="sharedm">
         <div class="description">Shared Files <img src="./icons/dropdown.png" alt=""></div>
       <ul class="list">
@@ -187,7 +264,7 @@
       </ul>
       </div>
     </div>
-    <!-- <div id="about">This is floating</div> -->
+    <!-- A container that has images that is shown in fullscreen -->
     <div id="imagecontainer">
       <div id="exit" title="Close">
         <img src="../front/icons/cancel-64.png" alt="">

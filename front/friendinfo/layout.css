@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(255, 240, 240);
+  overflow: hidden;
+}
+* {
+  /* border: 1px solid green; */
+  color: rgba(0, 0, 0, 0.411);
+}
+/* our outermost wrapper */
+#outermostwrapper {
+  /*  Useless css  */
+  background-color: rgba(255, 255, 255, 0.842);
+  border: 1px solid rgb(255, 132, 132);
+  /* usefull */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    "topleft navbar navbar navbar navbar navbar navbar navbar navbar"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section"
+    "side section section section section section section section section";
+}
+.items {
+  border: 2px solid transparent;
+  font-size: 18px;
+}
+#siteinfo {
+  background-color: rgb(255, 255, 255);
+  grid-area: topleft;
+}
+#navbar {
+  background-color: rgb(248, 248, 248);
+  grid-area: navbar;
+}
+#section {
+  background-color: rgb(255 255 255 / 92%);
+  grid-area: section;
+  border-radius: 6px;
+}
+#side {
+  background-color: rgba(213, 213, 213, 0.14);
+  grid-area: side;
+  z-index: 1;
+  box-shadow: 1px 9px 10px 4px rgba(209, 209, 209, 0.542);
+  border-radius: 3px;
+  width: 500px;
+  transition: width 0.5s ease-out;
+}

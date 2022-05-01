@@ -1,4 +1,4 @@
-//our variables
+//our variables 
 var animationaccess = true;
 var image = document.getElementById("sendimage");
 var submit = document.getElementById("send");
@@ -6,40 +6,60 @@ let optionbox = document.getElementById("optionbox");
 let dropdown = document.getElementById("dropdown");
 let dropdown2 = document.getElementById("dropdown2");
 let shared = document.getElementById("shared");
-dropdown.addEventListener("click", () => { optionbox.style.top != "10%" ? showoptionbar(optionbox, dropdown) : hideoptionbar(optionbox, dropdown); });
-dropdown2.addEventListener("click", () => { shared.style.top != "10%" ? showoptionbar(shared, dropdown2) : hideoptionbar(shared, dropdown2); });
 
-function displayimage(e) {
+
+//adding event listeners to our dudes
+dropdown.addEventListener("click", () => { optionbox.style.top != "10%" ? showoptionbar(optionbox, dropdown) : hideoptionbar(optionbox, dropdown); });
+dropdown2.addEventListener("click", () => { shared.style.top != "10%" ? showoptionbar(shared, dropdown2) : hideoptionbar(shared, dropdown2) });
+// dropdown2.addEventListener("click", () => { shared.style.top != "10%" ? showoptionbar(shared, dropdown2) : me() });
+
+
+//adding event listener to hide option-box when blurred
+optionbox.addEventListener("focusout", (e) => {
+    hideoptionbar(optionbox, dropdown);
+})
+shared.addEventListener("blur", (e) => {
+    // console.log("idiot");
+    hideoptionbar(shared, dropdown2);
+})
+
+
+
+//adjusts image size after 500 ms
+setTimeout(() => {
+    adjustimagesize();
+}, 500);
+
+//adjusts image size in the image list
+function adjustimagesize() {
+    Array.from(document.querySelectorAll(".list>img")).forEach(element => {
+        ratio = element.naturalHeight / element.naturalWidth;
+        element.style.height = "60px";
+        element.style.width = (60 / ratio) + "px";
+    })
+}
+
+
+//displays image in high resolution in full-screen
+function displayimage(source) {
     const a = new Image();
-    a.src = e;
+    a.src = source;
     a.onload = () => {
         w = a.naturalWidth;
         h = a.naturalHeight;
         let imageratio = h / w;
         a.width = "70vw";
         // console.log(h);
-        document.querySelector("#image").src = e;
+        document.querySelector("#image").src = source;
         document.querySelector("#image").style.width = (500 / imageratio) + "px";
         document.querySelector("#image").style.height = "500px";
         console.log(document.querySelector("#image"));
         document.querySelector("#imagecontainer").style.display = "flex";
         console.log(imageratio);
     }
-    // setTimeout(() => {
-    //     w = a.naturalWidth;
-    //     h = a.naturalHeight;
-    //     let imageratio = h / w;
-    //     a.width = "70vw";
-    //     // console.log(h);
-    //     document.querySelector("#image").src = e;
-    //     document.querySelector("#image").style.width = (500 / imageratio) + "px";
-    //     document.querySelector("#image").style.height = "500px";
-    //     console.log(document.querySelector("#image"));
-    //     document.querySelector("#imagecontainer").style.display = "flex";
-    //     console.log(imageratio);
-    // }, 0);
-}
 
+}
+console.log(imageratio);
 function hideoptionbar(element, host) {
     element.style.opacity = 0;
     element.style.top = "-100%";
@@ -49,10 +69,10 @@ function hideoptionbar(element, host) {
     host.style.transition = "transform 0.2s ease-out";
     // console.log(element.getAttribute("id"));
     if (element.getAttribute("id") == "shared") {
-        console.log("E");
-        Array.from(element.querySelectorAll(".list")).forEach(element => {
-            element.style.display = "none";
-            // element.style.width = "0px";
+        // console.log("E");
+        Array.from(element.querySelectorAll(".list")).forEach(ele => {
+            // ele.style.display = "none";
+            // ele.style.width = "0px";ccx
         })
     }
 }
@@ -93,37 +113,6 @@ submit.addEventListener("click", (e) => {
     }
 }, true);
 
-//shows description to the options
-// function addescriptions(ele, content) {
-//     // console.log(ele);
-//     ele.addEventListener("mouseover", (e) => {
-//         // document.getElementById("about").style.position = "absolute";
-//         document.getElementById("about").style.display = "flex";
-//         document.getElementById("about").style.left = `${e.clientX - 20}px`;
-//         document.getElementById("about").style.top = `${e.clientY - 30}px`;
-//         document.getElementById("about").textContent = content;
-//         document.getElementById("about").style.opacity = "1";
-//         document.getElementById("about").style.transition = "opacity 1s ease-in";
-//     }, false);
-//     ele.addEventListener("mouseleave", () => {
-//         document.getElementById("about").style.opacity = "0";
-//         document.getElementById("about").style.transition = "opacity 0.5s ease-in";
-//         setTimeout(() => {
-//             document.getElementById("about").style.display = "none";
-//         }, 500);
-//     }, false);
-// }
-
-// //adding descriptions to the various buttons
-// addescriptions(document.getElementById("filesoption"), "Send a file")
-// addescriptions(document.getElementById("imagesoption"), "Send an image")
-// addescriptions(document.getElementById("loactionoption"), "Send your location")
-// addescriptions(document.getElementById("timedmessageoption"), "Send a timed message")
-// addescriptions(document.getElementById("dropdown"), "View options")
-// addescriptions(document.getElementById("dropdown2"), "View shared medias")
-
-
-
 Array.from(document.getElementsByClassName("description")).forEach(element => {
     element.addEventListener("click", (event) => {
         if (event.target.querySelector("img").style.transform == "rotate(180deg)") {
@@ -144,21 +133,50 @@ Array.from(document.getElementsByClassName("description")).forEach(element => {
     });
 });
 
+
 document.getElementById("exit").addEventListener("click", (e) => {
     document.getElementById("imagecontainer").style.display = "none";
 })
 
-// important
-// const a = new Image();
-// setTimeout(() => {
-//     a.src = "../front/sampleimages/elonmusk.jpg"
-//     console.log(a);
-//     w = a.naturalWidth;
-//     let imageratio = h / w;
-//     console.log(imageratio);
-// }, 500);
-// setTimeout(() => {
-//     h = a.naturalHeight;
-//     console.log(h);
+let e = document.querySelector("#shared>#medias>.list");
+e.addEventListener("scroll", (ev) => {
+    e.style.border = "2px solid red";
+    console.log("d");
+}, false)
 
-// }, 2000)
+setInterval(() => {
+    let a = document.querySelector("#chats");
+    const date = new Date();
+    let d = date.getHours() + ":" + date.getMinutes();
+    a.textContent = d;
+    // console.log(Window.scrollY);
+}, 2000);
+
+// }
+function sharedmediascrolled(element) {
+    // document.getElementById("Asdf").appendChild
+    if (userscrolled(element) > 75) {
+        // alert("userscrolled");
+        // element.scrollTop = element.scrollTo(element.scrollTop);
+
+        // while (userscrolled(element) > 75) {
+        //     element.append(getnode(`<img src="../front/sampleimages/elonmusk.jpg" alt="elonmusk" onclick="displayimage(this.src)">`)[0]);
+        // }
+    }
+}
+console.log(getnode(`<img src="../front/sampleimages/elonmusk.jpg" alt="elonmusk" onclick="displayimage(this.src)">`));
+
+function userscrolled(e) {
+    // console.log(e.clientHeight, e.offsetHeight);
+    // console.log(e.scrollHeight + " / " + (document.querySelector("#medias").scrollTop + e.clientHeight));
+    let userscroll = (e.scrollTop + e.clientHeight) * 100 / e.scrollHeight;
+    // console.log(userscroll, e.getAttribute("class"));
+    return userscroll;
+}
+
+
+// function getnode(s) {
+//     let a = document.createElement("p");
+//     a.innerHTML = s;
+//     return a.children[0];
+// }
