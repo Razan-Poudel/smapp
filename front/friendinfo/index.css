@@ -4,8 +4,12 @@
   background-color: rgb(255, 255, 255);
   display: flex;
 }
-
-#personal > strong {
+#personal > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#personal > a > strong {
+  cursor: pointer;
   border: 1px solid transparent;
   font-size: larger;
   font-family: sans-serif;
@@ -34,7 +38,8 @@
   cursor: pointer;
   color: rgba(23, 21, 23, 0.761);
   border: 1px solid transparent;
-  height: 35px;
+  min-height: 35px;
+  height: fit-content;
   border-radius: 5px;
   display: flex;
   align-content: center;
@@ -53,7 +58,7 @@
   transition: background-color 0.4s ease;
   border-left: 4px solid rgba(196, 52, 201, 0.968);
   border-radius: 0px;
-  background-color: rgba(224, 207, 224, 0.271);
+  background-color: rgba(238, 226, 238, 0.271);
 }
 .actionslist > .text {
   display: block;
@@ -91,7 +96,7 @@
 }
 #searchbar {
   width: 150px;
-  text-align: center;
+  /* text-align: center; */
   height: 30px;
   font-size: 17px;
   font-family: sans-serif;
@@ -247,12 +252,47 @@ input[type="search"]::-webkit-search-cancel-button::before {
   font-size: 15.5px;
   display: inline-block;
   width: 100px;
-  height: 35px;
-  margin-left: 95px;
   margin-top: 5px;
-  margin-bottom: 20px;
-  /* border: 1px solid red; */
+  height: 20px;
+  color: rgba(0, 0, 0, 0.355);
+  font-family: sans-serif;
+}
+.subactionwrapper:hover {
+  background-color: rgba(208, 181, 208, 0.4);
+}
+
+.subactionwrapper {
+  height: fit-content;
+  position: relative;
+  display: flex;
+  /* height: 30px; */
+  /* display: none; */
+  height: 0px;
+  transition: height 0.4s ease-in;
+  overflow: hidden;
+}
+.subactionwrapper > .icon {
+  display: inline-block;
+  margin-left: 69px;
+  justify-self: center;
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+.subactionwrapper > .icon > img {
+  height: 17px;
+  width: 17px;
 }
 .invert {
   filter: invert(1);
+}
+#dropdown {
+  margin-left: 25px;
+  transition: transform 0.2s ease-in;
+  z-index: -10;
+}
+#dropdown > img {
+  height: 8px;
+  width: 16px;
+  opacity: 0.35;
 }

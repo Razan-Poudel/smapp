@@ -30,3 +30,17 @@ Array.from(document.querySelectorAll(".actionslist > .iconandtextwrapper ")).for
         e.target.parentNode.click();
     })
 })
+let shared = document.getElementById("shared");
+shared.addEventListener("click", (e) => {
+    document.getElementById("dropdown").style.transform = "rotate(180deg)";
+    Array.from(shared.querySelectorAll(".subactionwrapper")).forEach(element => {
+        element.style.height = "30px";
+    })
+})
+shared.addEventListener("blur", (e) => {
+    document.getElementById("dropdown").style.transform = "rotate(0deg)";
+    Array.from(shared.querySelectorAll(".subactionwrapper")).forEach(element => {
+        element.style.height = "0px";
+    })
+})
+

@@ -1,0 +1,100 @@
+<div id="innersection-info">
+  <!-- This is where we see the relation of a person with you like freindship status and shared medas -->
+  <div id="profilescard">
+    <div id="profiles">
+      <div id="myimage" class="profileimages1">
+        <img src="http://127.0.0.1:5500/sampleimages/unnamed.jpg" alt="404" />
+        <span class="username"> Razan Paudel </span>
+      </div>
+      <div id="arrow">
+        <div id="actualarrow">
+          <img onerror="this.style.display='none'" src="" alt="" />
+        </div>
+      </div>
+      <div id="mateimage" class="profileimages1">
+        <img src="../sampleimages/random4.webp" alt="404" />
+        <span class="username">Elon Musk</span>
+      </div>
+    </div>
+    <div id="sh-des">
+      You are mates with <span id="mutalmates"> 124 mutal mates</span>
+      <br />
+      Since <strong id="matesdate">April 12 2006</strong>
+    </div>
+  </div>
+  <!-- this is the div containeing total share counts of messages files and other stuffs -->
+  <div id="details">
+    <!-- messages -->
+    <div
+      id="messagescount"
+      class="count"
+      onmouseover="fillimage(this,'/icons/chatbubble-filled.svg')"
+      onmouseout="removefilling(this,'/icons/chatbubble-outline.svg')"
+      title="View Messages"
+    >
+      <span class="counttype">
+        <img
+          src="/icons/chatbubble-outline.svg"
+          alt=""
+          onerror="this.style.display='none'"
+        />
+        <span class="heading"> Messages </span>
+      </span>
+      <span class="value">10053+</span>
+    </div>
+    <!-- images -->
+    <div
+      id="imagescount"
+      class="count"
+      onmouseover="fillimage(this,'/icons/images-filled.svg')"
+      onmouseout="removefilling(this,'/icons/images-outline.svg')"
+      title="View Images"
+    >
+      <span class="counttype">
+        <img
+          src="/icons/images-outline.svg"
+          alt=""
+          onerror="this.style.display='none'"
+        />
+        <span class="heading"> Images </span>
+      </span>
+      <span class="value">1245+</span>
+    </div>
+    <!-- videos -->
+    <div
+      id="videoscount"
+      class="count"
+      onmouseover="fillimage(this,'/icons/videocam-filled.svg')"
+      onmouseout="removefilling(this,'/icons/videocam-outline.svg')"
+      title="View Videos"
+    >
+      <span class="counttype">
+        <img
+          src="/icons/videocam-outline.svg"
+          alt=""
+          onerror="this.style.display='none'"
+        />
+        <span class="heading"> Videos </span>
+      </span>
+      <span class="value">103+</span>
+    </div>
+    <!-- files -->
+    <div
+      id="filescount"
+      class="count"
+      onmouseover="fillimage(this,'/icons/file-filled.svg')"
+      onmouseout="removefilling(this,'/icons/file-outline.svg')"
+      title="Browse Files"
+    >
+      <span class="counttype">
+        <img
+          src="/icons/file-outline.svg"
+          alt=""
+          onerror="this.style.display='none'"
+        />
+        <span class="heading"> Files </span>
+      </span>
+      <span class="value">109+</span>
+    </div>
+  </div>
+</div>

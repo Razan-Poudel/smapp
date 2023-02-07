@@ -1,6 +1,5 @@
-icons
-sampleimages
+
 /back/node_modules/
 /back/node_modules/@types/
 front/todos.todo
-tests/
+itests/

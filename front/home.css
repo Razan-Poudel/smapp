@@ -124,7 +124,7 @@
   width: 90vh;
   outline: transparent;
   padding-left: 10px;
-  background-color: rgba(232, 187, 247, 0.548);
+  background-color: rgb(220 218 220 / 55%);
   color: rgba(0, 0, 0, 0.986);
   border: rgba(252, 247, 247, 0) 2px solid;
   font-size: 17px;
@@ -266,4 +266,7 @@
   width: 24px;
   height: 24px;
   margin: 4px 15px;
+}
+.chatmessage:first-child {
+  margin-bottom: 25px;
 }

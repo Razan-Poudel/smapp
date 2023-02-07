@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="privacy.css" />
+    <!-- <link rel="stylesheet" href="profile.css" /> -->
   </head>
   <body>
     <!-- our outermost wrapper -->
@@ -21,7 +23,7 @@
         <div id="searchwrapper">
           <input
             type="search"
-            placeholder="Search a friend"
+            placeholder="Search a Mate"
             id="searchbar"
             spellcheck="false"
           />
@@ -33,10 +35,10 @@
       <div id="siteinfo" class="items">
         <!-- This is where user sees his profile pic new mate logo or text -->
         <div id="personal">
-          <a href="#" style="border: 1px solid rgba(255, 0, 0, 0)">
+          <a href="/home.html" style="border: 1px solid rgba(255, 0, 0, 0)">
             <!-- <img src="/icons/history-filled.svg" alt="User" id="userimage" /> -->
+            <strong id="chats" title="Mate">Mate</strong>
           </a>
-          <strong id="chats" title="Mate">Mate</strong>
         </div>
       </div>
 
@@ -53,16 +55,38 @@
             </div>
           </li>
           <!-- This is the shared action btn -->
-          <li class="actionslist" tabindex="0">
+          <li class="actionslist" tabindex="0" id="shared">
             <div class="iconandtextwrapper">
               <span class="icon">
                 <img src="/icons/link-outline.svg" alt=""
               /></span>
-              <!-- This is the sub-actionlist -->
               <span class="text">shared</span>
+              <span id="dropdown"
+                ><img
+                  src="/icons/dropdownpng.png"
+                  alt="V"
+                  onerror="this.style.display='none'"
+              /></span>
             </div>
+            <!-- This is the images sub-actionlist -->
             <div class="subactionwrapper">
+              <span class="icon"
+                ><img
+                  src="/icons/images-outline.svg"
+                  alt=""
+                  onerror="this.style.display='none'"
+              /></span>
               <span class="sub-actionslist">Images</span>
+            </div>
+            <!-- This is the videos sub-actionlist -->
+            <div class="subactionwrapper">
+              <span class="icon"
+                ><img
+                  src="/icons/videocam-outline.svg"
+                  alt=""
+                  onerror="this.style.display='none'"
+              /></span>
+              <span class="sub-actionslist">Videos</span>
             </div>
           </li>
           <!-- This is where activites btn located -->
@@ -106,113 +130,14 @@
       <!-- This is where out main content i.e information is located  -->
 
       <div id="section" class="items">
-        <!-- This is where we see the relation of a person with you like freindship status and shared medas -->
-        <div id="profilescard">
-          <div id="profiles">
-            <div id="myimage" class="profileimages1">
-              <img
-                src="http://127.0.0.1:5500/sampleimages/unnamed.jpg"
-                alt="404"
-              />
-              <span class="username"> Razan Paudel </span>
-            </div>
-            <div id="arrow">
-              <div id="actualarrow">
-                <img
-                  src="/icons/handshake.pn g"
-                  alt=""
-                  onerror="this.style.display='none'"
-                />
-              </div>
-            </div>
-            <div id="mateimage" class="profileimages1">
-              <img src="../sampleimages/random4.webp" alt="404" />
-              <span class="username">Elon Musk</span>
-            </div>
-          </div>
-          <div id="sh-des">
-            You are mates with <span id="mutalmates"> 124 mutal mates</span>
-            <br />
-            Since <strong id="matesdate">April 12 2006</strong>
-          </div>
-        </div>
-        <!-- this is the div containeing total share counts of messages files and other stuffs -->
-        <div id="details">
-          <!-- messages -->
-          <div
-            id="messagescount"
-            class="count"
-            onmouseover="fillimage(this,'/icons/chatbubble-filled.svg')"
-            onmouseout="removefilling(this,'/icons/chatbubble-outline.svg')"
-            title="View Messages"
-          >
-            <span class="counttype">
-              <img
-                src="/icons/chatbubble-outline.svg"
-                alt=""
-                onerror="this.style.display='none'"
-              />
-              <span class="heading"> Messages </span>
-            </span>
-            <span class="value">10053+</span>
-          </div>
-          <!-- images -->
-          <div
-            id="imagescount"
-            class="count"
-            onmouseover="fillimage(this,'/icons/images-filled.svg')"
-            onmouseout="removefilling(this,'/icons/images-outline.svg')"
-            title="View Images"
-          >
-            <span class="counttype">
-              <img
-                src="/icons/images-outline.svg"
-                alt=""
-                onerror="this.style.display='none'"
-              />
-              <span class="heading"> Images </span>
-            </span>
-            <span class="value">1245+</span>
-          </div>
-          <!-- videos -->
-          <div
-            id="videoscount"
-            class="count"
-            onmouseover="fillimage(this,'/icons/videocam-filled.svg')"
-            onmouseout="removefilling(this,'/icons/videocam-outline.svg')"
-            title="View Videos"
-          >
-            <span class="counttype">
-              <img
-                src="/icons/videocam-outline.svg"
-                alt=""
-                onerror="this.style.display='none'"
-              />
-              <span class="heading"> Videos </span>
-            </span>
-            <span class="value">103+</span>
-          </div>
-          <!-- files -->
-          <div
-            id="filescount"
-            class="count"
-            onmouseover="fillimage(this,'/icons/file-filled.svg')"
-            onmouseout="removefilling(this,'/icons/file-outline.svg')"
-            title="Browse Files"
-          >
-            <span class="counttype">
-              <img
-                src="/icons/file-outline.svg"
-                alt=""
-                onerror="this.style.display='none'"
-              />
-              <span class="heading"> Files </span>
-            </span>
-            <span class="value">109+</span>
-          </div>
-        </div>
+        <div import-html="privacy" class="import"></div>
+        <div id="scriptswrapper"></div>
       </div>
     </div>
   </body>
+  <!-- utility script to suppot imports in html -->
+  <script src="../home_component/html-importer.js"></script>
   <script src="index.js"></script>
+  <script src="privacy.js"></script>
+  <script src="profile.js"></script>
 </html>

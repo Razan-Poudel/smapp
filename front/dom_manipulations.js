@@ -56,10 +56,10 @@ function displayimage(source) {
         console.log(document.querySelector("#image"));
         document.querySelector("#imagecontainer").style.display = "flex";
         console.log(imageratio);
+        console.log(imageratio);
     }
 
 }
-console.log(imageratio);
 function hideoptionbar(element, host) {
     element.style.opacity = 0;
     element.style.top = "-100%";

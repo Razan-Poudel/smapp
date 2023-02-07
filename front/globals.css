@@ -171,7 +171,7 @@ body {
   flex-direction: row-reverse;
   height: 4.5vh;
   margin: 1px;
-  background-color: rgba(212, 152, 230, 0.664);
+  background-color: rgb(255 255 255 / 66%);
   border-radius: 3px;
 }
 .outer > span {

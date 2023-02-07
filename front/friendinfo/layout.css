@@ -62,13 +62,38 @@ body {
   background-color: rgb(255 255 255 / 92%);
   grid-area: section;
   border-radius: 6px;
+  overflow-y: scroll;
 }
 #side {
   background-color: rgba(213, 213, 213, 0.14);
   grid-area: side;
   z-index: 1;
-  box-shadow: 1px 9px 10px 4px rgba(209, 209, 209, 0.542);
+  box-shadow: 1px 7px 10px 2px rgba(209, 209, 209, 0.542);
   border-radius: 3px;
   width: 500px;
   transition: width 0.5s ease-out;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+#section {
+  /* margin-left: 0px;
+  transition: margin-left 1s ease-in; */
+  /* margin-left: 1000px; */
+  /* margin-left: 0px; */
+  /* transition: margin-left 1s ease-in; */
 }

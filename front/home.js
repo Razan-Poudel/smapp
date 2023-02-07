@@ -13,8 +13,8 @@ let m1 = [
 ];
 
 const users = [
-  { profilepicture: "./sampleimages/elonmusk.jpg", name: "<script></script>", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "Mars is good", time: "2:45 PM", issent: false }, },
-  { profilepicture: "./sampleimages/22987812.jpg", name: "Calculator", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/elonmusk.jpg", name: "Elon Musk", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "Pachas khai ???", time: "2:45 PM", issent: false }, },
+  { profilepicture: "./sampleimages/22987812.jpg", name: "Pratik", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/circle.png", name: "Circle", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/cross.png", name: "Cross", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/science hw 2.jpg", name: "Homework", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },

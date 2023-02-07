@@ -1,0 +1,260 @@
+#innersection {
+  background-color: aqua;
+  margin-left: 0px;
+}
+#smallprofilecard {
+  height: 190px;
+  width: 180px;
+  position: absolute;
+  right: 80px;
+  border-radius: 7px;
+}
+#smallprofilecard:hover {
+  transition: box-shadow 0.7s ease;
+  box-shadow: 10px 10px 10px rgba(230, 226, 226, 0.535);
+}
+#smallprofilecard > #imagearea {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#smallprofilecard > #imagearea > img {
+  width: 60%;
+  clip-path: circle(50%);
+}
+#smallprofilecard > #textarea {
+  height: 35%;
+}
+.username {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.nickname {
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#text {
+  width: 60%;
+  height: fit-content;
+  font-family: sans-serif;
+  overflow-wrap: break-word;
+}
+
+#editimage {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+#editimage > img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+#nicknameinput {
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+  width: 69%;
+  font-size: 15px;
+  outline: none;
+}
+#submitnickname {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+#submitnickname > img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+#form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#buttonswrapper {
+  /* border: 1px solid red; */
+  height: 500px;
+  width: 55vw;
+  /* background-color: antiquewhite; */
+}
+#buttonswrapper > * {
+  /* border-bottom: 1px solid rgba(13, 14, 13, 0.131); */
+}
+#buttonswrapper > .headerwrapper {
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.567);
+  display: block;
+  height: fit-content;
+}
+#privacy-header > h3 {
+  margin-left: 3%;
+  color: rgba(0, 0, 0, 0.567);
+}
+#privacy-header > h5 {
+  margin-left: 3%;
+  margin-top: -15px;
+  color: rgba(0, 0, 0, 0.43);
+}
+#privacy-header {
+  border-radius: 10px;
+}
+#optionsarea {
+  /* border: 1px solid red; */
+  height: 300px;
+}
+#optionsarea > li {
+  height: 40px;
+  list-style: none;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid grey; */
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+.buttonzone {
+  height: 100%;
+  width: 9%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.buttonzone > button {
+  border-radius: 12px;
+  width: 50px;
+  height: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.244);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+  cursor: pointer;
+}
+.buttonzone > button > .bubble {
+  box-shadow: 2px 2px 2px rgba(118, 117, 119, 0.172);
+  height: 100%;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+* {
+  /* border: 1px solid grey; */
+}
+.buttonIsOn > .bubble {
+  transition: margin 0.3s ease-out;
+  margin-left: 25px;
+}
+.buttonIsOff > .bubble {
+  transition: margin 0.3s ease-out;
+  margin-left: 0px;
+}
+.buttonIsOff {
+  background-color: rgba(180, 176, 176, 0.29);
+  transition: background-color 0.3s ease-in;
+}
+.buttonIsOn {
+  background-color: rgb(230, 17, 237);
+  box-shadow: 2px 2px 7px rgb(202, 88, 230);
+}
+.textzone {
+  width: fit-content;
+  display: inline;
+  font-family: sans-serif;
+  font-size: 17px;
+  color: rgb(136, 132, 132);
+  font-weight: 500;
+}
+#globalmodifier {
+  font-size: large;
+  margin: auto;
+  font-weight: 700;
+}
+.report-options {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  /* display: none; */
+}
+#messagetext {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+#messagetext > span {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(2, 180, 2, 0.901);
+}
+.buttonzone > input {
+  height: 20px;
+  width: 20px;
+}
+label,
+input {
+  cursor: pointer;
+}
+#privacyarea {
+  border-left: 2px solid rgba(128, 128, 128, 0.146);
+  /* border-bottoms: 1px solid grey; */
+}
+#notice {
+  margin-bottom: 10px;
+  padding: 2px;
+  font-family: sans-serif;
+  text-align: center;
+}
+#notice > .text {
+  color: rgba(244, 17, 70, 0.567);
+  /* border: 1px solid red; */
+  padding-left: 3px;
+  margin-left: 10px;
+  /* text-align: center; */
+}
+#submitwrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+#submitwrapper > button {
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 7px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: rgb(234, 0, 255);
+  color: white;
+  transition: background-color 0.4s ease-in;
+  cursor: pointer;
+}
+#submitwrapper > button:hover {
+  transition: background-color 0.4s ease-in;
+  background-color: rgba(255, 16, 207, 0.843);
+}

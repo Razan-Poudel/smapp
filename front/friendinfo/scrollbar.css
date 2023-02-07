@@ -1,0 +1,14 @@
+/* designing the scroollbars */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(255, 192, 203), rgb(128, 0, 128));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(185, 22, 185), rgb(231, 149, 162));
+}
