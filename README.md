@@ -1,11 +1,15 @@
-<h1>This is a social media app </h1>
-<i>IT is going to serve the following the features</i>
-<li>Fully customizable user interface</li>
-<li>Support for timed messages</li>
-<li>Make user able to communicate with others by adding them in friend list</li>
-<li>Give user full access to customize their user experience</li>
-<li>Give users a new experience fo social media</li>
+# Social Media App
 
-<i style="color: red;">This project is not completed yet.</i><br>
-<i>This notice will be updated along with the progress of the project</i><br>
-<i>For any queries email: <a href="poudelrajan63@gmail.com">poudelrajan63@gmail.com</a><br>
+This is a social media application that aims to provide the following features:
+
+- Fully customizable user interface
+- Support for timed messages
+- Enable users to communicate with others by adding them to their friend list
+- Provide users with full access to customize their user experience
+- Offer a fresh and innovative social media experience
+
+> **Note:**  
+> This project is not completed yet.  
+> This notice will be updated as the project progresses.
+
+For any queries, feel free to email: [poudelrajan63@gmail.com](mailto:poudelrajan63@gmail.com)
