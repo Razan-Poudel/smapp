@@ -13,3 +13,10 @@ This is a social media application that aims to provide the following features:
 > This notice will be updated as the project progresses.
 
 For any queries, feel free to email: [poudelrajan63@gmail.com](mailto:poudelrajan63@gmail.com)
+**More importantly**
+You can view the demo of each page as follows.
+> Note that these pages are still incomplete. They are just for demo
+
+- Chat interface:         https://razan-poudel.github.io/smapp/front/home.html
+- Report menu interface : https://razan-poudel.github.io/smapp/front/friendinfo/index.html
+- Profile interface:      https://razan-poudel.github.io/smapp/front/friendinfo/profile.html
