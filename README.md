@@ -17,6 +17,6 @@ For any queries, feel free to email: [poudelrajan63@gmail.com](mailto:poudelraja
 You can view the demo of each page as follows.
 > Note that these pages are still incomplete. They are just for demo
 
-- Chat interface:         https://razan-poudel.github.io/smapp/front/home.html
-- Report menu interface : https://razan-poudel.github.io/smapp/front/friendinfo/index.html
-- Profile interface:      https://razan-poudel.github.io/smapp/front/friendinfo/profile.html
+- Chat interface:         [Chat](https://razan-poudel.github.io/smapp/front/home.html)
+- Report menu interface : [Report](https://razan-poudel.github.io/smapp/front/friendinfo/index.html)
+- Profile interface:      [Profile](https://razan-poudel.github.io/smapp/front/friendinfo/profile.html)
