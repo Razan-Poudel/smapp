@@ -13,16 +13,16 @@ let m1 = [
 ];
 
 const users = [
-  { profilepicture: "./sampleimages/elonmusk.jpg", name: "Elon Musk", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "Pachas khai ???", time: "2:45 PM", issent: false }, },
+  { profilepicture: "./sampleimages/elonmusk.jpg", name: "Elon Musk", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "Wanna trade?", time: "2:45 PM", issent: false }, },
   { profilepicture: "./sampleimages/22987812.jpg", name: "Pratik", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/circle.png", name: "Circle", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/cross.png", name: "Cross", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
-  { profilepicture: "./sampleimages/science hw 2.jpg", name: "Homework", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/science hw 2.jpg", name: "john", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
   { profilepicture: "./sampleimages/start.jpg", name: "Windows", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
-  { profilepicture: "./sampleimages/nocamerasign-197150273.jpg", name: "Delivery!!", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
-  { profilepicture: "./sampleimages/space.jpeg", name: "Just Chilli'n", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
-  { profilepicture: "./sampleimages/background.jpeg", name: "Lights", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
-  { profilepicture: "./sampleimages/download (1).png", name: "Github", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/nocamerasign-197150273.jpg", name: "Astrouaut!!", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/space.jpeg", name: "Dost", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/background.jpeg", name: "Bill", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
+  { profilepicture: "./sampleimages/download (1).png", name: "Nobody", chatid: "1vhwdkdsodkajdnslkjdindniend", lastmessage: { textmessage: "This is 25th message", time: "6:29 PM", issent: false }, },
 ]
 m1.reverse();
 //This function append all the sent and received messages into the DOM(in #chatbox) which must be provided in the form of array of  each message as object containign  all the details like messagetype,time,etc;
